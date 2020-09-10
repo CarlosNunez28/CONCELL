@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace CONCELL
 {
-    public partial class Form1 : Form
+    public partial class FMAdministrador : Form
     {
-        public Form1()
+        public FMAdministrador()
         {
             InitializeComponent();
+        }
+
+        private void FMAdministrador_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

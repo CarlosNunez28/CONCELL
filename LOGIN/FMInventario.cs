@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace CONCELL
 {
-    public partial class Form1 : Form
+    public partial class FMInventario : Form
     {
-        public Form1()
+        public FMInventario()
         {
             InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FMInventario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
