@@ -23,3 +23,28 @@ C:\Users\Carlos Nuñez\source\repos\LOGIN\LOGIN\obj\Debug\CONCELL.csproj.CoreCom
 C:\Users\Carlos Nuñez\source\repos\LOGIN\LOGIN\obj\Debug\CONCELL.csproj.CopyComplete
 C:\Users\Carlos Nuñez\source\repos\LOGIN\LOGIN\obj\Debug\CONCELL.exe
 C:\Users\Carlos Nuñez\source\repos\LOGIN\LOGIN\obj\Debug\CONCELL.pdb
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\CONCELL.exe.config
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\CONCELL.exe
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\CONCELL.pdb
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\MySql.Data.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\Google.Protobuf.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\Zstandard.Net.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\Renci.SshNet.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\System.Buffers.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\System.Memory.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\bin\Debug\MySql.Data.xml
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.csprojAssemblyReference.cache
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.exe.config
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\LOGIN.Form1.resources
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.Properties.Resources.resources
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.csproj.GenerateResource.cache
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.csproj.CoreCompileInputs.cache
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.csproj.CopyComplete
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.exe
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.pdb

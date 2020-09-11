@@ -56,10 +56,28 @@
     <Compile Include="FmLogin.Designer.cs">
       <DependentUpon>FmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMInventario.Designer.cs">
+      <DependentUpon>FMInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMAdministrador.Designer.cs">
+      <DependentUpon>FMAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FMAdministrador.resx">
+      <DependentUpon>FMAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmLogin.resx">
       <DependentUpon>FmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMInventario.resx">
+      <DependentUpon>FMInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +104,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\img\CONCELL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
