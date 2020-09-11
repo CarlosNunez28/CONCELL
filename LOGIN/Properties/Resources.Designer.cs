@@ -83,6 +83,26 @@ namespace CONCELL.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descarga__1_ {
+            get {
+                object obj = ResourceManager.GetObject("descarga (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga__2_ {
+            get {
+                object obj = ResourceManager.GetObject("descarga (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga1 {
             get {
                 object obj = ResourceManager.GetObject("descarga1", resourceCulture);
@@ -113,9 +133,39 @@ namespace CONCELL.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("images (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images__2_ {
             get {
                 object obj = ResourceManager.GetObject("images (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__2_1 {
+            get {
+                object obj = ResourceManager.GetObject("images (2)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images1 {
+            get {
+                object obj = ResourceManager.GetObject("images1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

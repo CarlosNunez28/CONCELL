@@ -68,6 +68,12 @@
     <Compile Include="FMAdministrador.Designer.cs">
       <DependentUpon>FMAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMUsuarios.Designer.cs">
+      <DependentUpon>FMUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMAdministrador.resx">
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMInventario.resx">
       <DependentUpon>FMInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMUsuarios.resx">
+      <DependentUpon>FMUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +128,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

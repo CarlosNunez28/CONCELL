@@ -48,3 +48,5 @@ C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\
 C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.csproj.CopyComplete
 C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.exe
 C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.pdb
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.FMAdministrador.resources
+C:\Users\Familia Najarro\Desktop\EDWIN NT100317\Proyecto ASI2\CONCELL\LOGIN\obj\Debug\CONCELL.FMInventario.resources
