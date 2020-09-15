@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
+using CONCELL;
 
 namespace LOGIN
 {
@@ -36,7 +37,41 @@ namespace LOGIN
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection conectar = new MySqlConnection("server=127.0.0.1; database=concell; Uid=root; pwd=;"); //Conexion a la base
+
+            MySqlConnection conectarbase = ConexionBD.conexion();
+            conectarbase.Open();
+
+            try
+            {
+                MySqlCommand codigo = new MySqlCommand();
+                codigo.Connection = conectarbase;
+
+                codigo.CommandText = ("select * from usuarios where usuario_login = '" + usuario_login.Text + "'and password = '" + password.Text + "'");
+
+                MySqlDataReader leer = codigo.ExecuteReader();
+                if (leer.Read())
+                {
+                    MessageBox.Show("Bienvenido");
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos");
+                }
+                conectarbase.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al ingresar al sistema: " + ex.Message);
+            }
+            finally
+            {
+                conectarbase.Close();
+            }
+
+
+
+
+            /*MySqlConnection conectar = new MySqlConnection("server=127.0.0.1; database=concell; Uid=root; pwd=;"); //Conexion a la base
             conectar.Open();
             //MessageBox.Show("Estas conectado a la base");
 
@@ -57,6 +92,7 @@ namespace LOGIN
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
             conectar.Close();
+            */
         }
 
         private void usuario_login_TextChanged(object sender, EventArgs e)
