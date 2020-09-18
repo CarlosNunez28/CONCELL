@@ -33,14 +33,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -119,15 +119,6 @@
             this.panel2.Size = new System.Drawing.Size(180, 340);
             this.panel2.TabIndex = 7;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(32, 33);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 20);
-            this.panel3.TabIndex = 5;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -146,29 +137,30 @@
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel4
+            // panel6
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(32, 83);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 20);
-            this.panel4.TabIndex = 7;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel6.Location = new System.Drawing.Point(32, 180);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 20);
+            this.panel6.TabIndex = 11;
             // 
-            // linkLabel2
+            // linkLabel4
             // 
-            this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.linkLabel2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(39, 83);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(66, 18);
-            this.linkLabel2.TabIndex = 6;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Inventario";
+            this.linkLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.linkLabel4.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.linkLabel4.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel4.Location = new System.Drawing.Point(39, 180);
+            this.linkLabel4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(120, 18);
+            this.linkLabel4.TabIndex = 10;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Control de Usuarios";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked_1);
             // 
             // panel5
             // 
@@ -194,29 +186,38 @@
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Reportes";
             // 
-            // panel6
+            // panel4
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel6.Location = new System.Drawing.Point(32, 180);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 20);
-            this.panel6.TabIndex = 11;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel4.Location = new System.Drawing.Point(32, 83);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 20);
+            this.panel4.TabIndex = 7;
             // 
-            // linkLabel4
+            // linkLabel2
             // 
-            this.linkLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.linkLabel4.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.linkLabel4.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel4.Location = new System.Drawing.Point(39, 180);
-            this.linkLabel4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(92, 18);
-            this.linkLabel4.TabIndex = 10;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Crear Usuarios";
+            this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.linkLabel2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel2.Location = new System.Drawing.Point(39, 83);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(66, 18);
+            this.linkLabel2.TabIndex = 6;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Inventario";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel3.Location = new System.Drawing.Point(32, 33);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 20);
+            this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel7
             // 
@@ -261,9 +262,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.linkLabel5);
             this.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "FMAdministrador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
             this.Load += new System.EventHandler(this.FMAdministrador_Load);
             this.panel1.ResumeLayout(false);

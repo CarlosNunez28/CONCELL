@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
@@ -22,6 +23,7 @@ namespace CONCELL
             try
             {
                 MySqlConnection conectarbase = new MySqlConnection(cadenaConexion);
+                DataSet datset;
                 return conectarbase;
             }
             catch(MySqlException ex)

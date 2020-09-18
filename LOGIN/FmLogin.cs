@@ -47,17 +47,37 @@ namespace LOGIN
                 codigo.Connection = conectarbase;
 
                 codigo.CommandText = ("select * from usuarios where usuario_login = '" + usuario_login.Text + "'and password = '" + password.Text + "'");
-
                 MySqlDataReader leer = codigo.ExecuteReader();
                 if (leer.Read())
                 {
+                    conectarbase.Close();
                     MessageBox.Show("Bienvenido");
+
+
+                    conectarbase.Open();
+                    MySqlCommand codigo2 = new MySqlCommand();
+                    codigo2.Connection = conectarbase;
+                    codigo2.CommandText = ("select * from usuarios where usuario_login = '" + usuario_login.Text +  "'and id_rol = '1'");
+                    MySqlDataReader leer2 = codigo2.ExecuteReader();
+                    if (leer2.Read())
+                    {
+                        MessageBox.Show("Es administrador");
+
+                        FMAdministrador adm = new FMAdministrador();
+                        adm.Visible = true;
+                        Visible = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Es bodeguero");
+                        Application.Exit();
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Usuario o contraseña incorrectos");
                 }
-                conectarbase.Close();
+                
             }
             catch (MySqlException ex)
             {

@@ -36,5 +36,12 @@ namespace CONCELL
         {
 
         }
+
+        private void linkLabel4_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FMUsuarios US = new FMUsuarios();
+            US.Visible = true;
+            Visible = false;
+        }
     }
 }
