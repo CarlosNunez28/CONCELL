@@ -43,5 +43,10 @@ namespace CONCELL
             US.Visible = true;
             Visible = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

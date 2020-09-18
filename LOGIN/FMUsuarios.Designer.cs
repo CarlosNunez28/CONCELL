@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMUsuarios));
             this.panel1 = new System.Windows.Forms.Panel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,6 +51,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtNumeroempleado = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,13 +73,6 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -287,6 +288,68 @@
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id_usuario";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.HeaderText = "N° Empleado";
+            this.Column1.MinimumWidth = 15;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "usuario_nombre";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.MinimumWidth = 15;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "usuario_apellidos";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column3.HeaderText = "Apellidos";
+            this.Column3.MinimumWidth = 15;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "usuario_login";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column4.HeaderText = "Usuario";
+            this.Column4.MinimumWidth = 15;
+            this.Column4.Name = "Column4";
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "password";
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            // 
+            // Cargo
+            // 
+            this.Cargo.DataPropertyName = "id_rol";
+            this.Cargo.HeaderText = "Cargo";
+            this.Cargo.Name = "Cargo";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "estado";
+            this.Column5.HeaderText = "Estado";
+            this.Column5.Name = "Column5";
+            // 
             // txtNumeroempleado
             // 
             this.txtNumeroempleado.BackColor = System.Drawing.SystemColors.Info;
@@ -449,68 +512,6 @@
             this.txtEstado.Size = new System.Drawing.Size(209, 29);
             this.txtEstado.TabIndex = 33;
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "id_usuario";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.HeaderText = "N° Empleado";
-            this.Column1.MinimumWidth = 15;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "usuario_nombre";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.MinimumWidth = 15;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "usuario_apellidos";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column3.HeaderText = "Apellidos";
-            this.Column3.MinimumWidth = 15;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "usuario_login";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column4.HeaderText = "Usuario";
-            this.Column4.MinimumWidth = 15;
-            this.Column4.Name = "Column4";
-            // 
-            // Password
-            // 
-            this.Password.DataPropertyName = "password";
-            this.Password.HeaderText = "Password";
-            this.Password.Name = "Password";
-            // 
-            // Cargo
-            // 
-            this.Cargo.DataPropertyName = "id_rol";
-            this.Cargo.HeaderText = "Cargo";
-            this.Cargo.Name = "Cargo";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "estado";
-            this.Column5.HeaderText = "Estado";
-            this.Column5.Name = "Column5";
-            // 
             // FMUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,6 +547,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FMUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control de usuarios";
