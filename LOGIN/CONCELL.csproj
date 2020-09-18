@@ -75,10 +75,19 @@
     <Compile Include="FMUsuarios.Designer.cs">
       <DependentUpon>FMUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMInventarioMenuLinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMInventarioMenuLinks.Designer.cs">
+      <DependentUpon>FMInventarioMenuLinks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMAdministrador.resx">
       <DependentUpon>FMAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMInventarioMenuLinks.resx">
+      <DependentUpon>FMInventarioMenuLinks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmLogin.resx">
       <DependentUpon>FmLogin.cs</DependentUpon>
