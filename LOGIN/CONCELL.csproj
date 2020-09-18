@@ -81,10 +81,19 @@
     <Compile Include="FMInventarioMenuLinks.Designer.cs">
       <DependentUpon>FMInventarioMenuLinks.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMCrearProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMCrearProducto.Designer.cs">
+      <DependentUpon>FMCrearProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMAdministrador.resx">
       <DependentUpon>FMAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMCrearProducto.resx">
+      <DependentUpon>FMCrearProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMInventarioMenuLinks.resx">
       <DependentUpon>FMInventarioMenuLinks.cs</DependentUpon>
