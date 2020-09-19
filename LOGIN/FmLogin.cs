@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
 using CONCELL;
-
+using CONCELL.Datos;
 namespace LOGIN
 {
     public partial class Form1 : Form
@@ -18,6 +18,7 @@ namespace LOGIN
         public Form1()
         {
             InitializeComponent();
+            General.OpenConnection();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -37,82 +38,40 @@ namespace LOGIN
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            MySqlConnection conectarbase = ConexionBD.conexion();
-            conectarbase.Open();
-
+            MySqlConnection c = General.GetConnection();
             try
             {
-                MySqlCommand codigo = new MySqlCommand();
-                codigo.Connection = conectarbase;
-
-                codigo.CommandText = ("select * from usuarios where usuario_login = '" + usuario_login.Text + "'and password = '" + password.Text + "'");
-                MySqlDataReader leer = codigo.ExecuteReader();
-                if (leer.Read())
+                MySqlCommand cmd = new MySqlCommand("SELECT U.id_usuario, R.ID_ROL, U.usuario_login, U.password, U.usuario_nombre, U.usuario_apellidos, U.estado, R.rol_nombre, R.rol_descripcion, R.rol_estado FROM usuarios U INNER JOIN roles R ON U.id_rol = R.id_rol WHERE U.usuario_login=@val1 AND U.estado = 1 AND R.rol_estado = 1", c);
+                cmd.Parameters.AddWithValue("@val1", usuario_login.Text);
+                MySqlDataReader r = cmd.ExecuteReader();
+                if (!r.Read() || !String.Equals(r["password"], password.Text))
                 {
-                    conectarbase.Close();
-                    MessageBox.Show("Bienvenido");
-
-
-                    conectarbase.Open();
-                    MySqlCommand codigo2 = new MySqlCommand();
-                    codigo2.Connection = conectarbase;
-                    codigo2.CommandText = ("select * from usuarios where usuario_login = '" + usuario_login.Text +  "'and id_rol = '1'");
-                    MySqlDataReader leer2 = codigo2.ExecuteReader();
-                    if (leer2.Read())
-                    {
-                        MessageBox.Show("Es administrador");
-
-                        FMAdministrador adm = new FMAdministrador();
-                        adm.Visible = true;
-                        Visible = false;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Es bodeguero");
-                        Application.Exit();
-                    }
+                    MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    r.Close();
+                    return;
                 }
-                else
+                cRol rol = new cRol(Convert.ToInt32(r["id_rol"]), r["rol_nombre"].ToString(), r["rol_descripcion"].ToString(), Convert.ToInt32(r["rol_estado"]));
+                General.CurrUsuario = new cUsuario(Convert.ToInt32(r["id_usuario"]), rol, r["usuario_login"].ToString(), r["usuario_nombre"].ToString(), r["usuario_apellidos"].ToString(), Convert.ToInt32(r["estado"]));
+                r.Close();
+
+                MessageBox.Show("Bienvenido", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                switch (General.CurrUsuario.Rol.Id)
                 {
-                    MessageBox.Show("Usuario o contraseña incorrectos");
+                    case 1:
+                        FMAdministrador fmadmin = new FMAdministrador();
+                        fmadmin.Show();
+                        this.Hide();
+                        break;
+                    case 2:
+                        break;
+                    default:
+                        break;
                 }
-                
             }
-            catch (MySqlException ex)
+            catch (Exception exp)
             {
-                MessageBox.Show("Error al ingresar al sistema: " + ex.Message);
+                MessageBox.Show("Error al ingresar al sistema: " + exp.Message);
             }
-            finally
-            {
-                conectarbase.Close();
-            }
-
-
-
-
-            /*MySqlConnection conectar = new MySqlConnection("server=127.0.0.1; database=concell; Uid=root; pwd=;"); //Conexion a la base
-            conectar.Open();
-            //MessageBox.Show("Estas conectado a la base");
-
-            MySqlCommand codigo = new MySqlCommand();
-
-            MySqlConnection conectado = new MySqlConnection();
-            codigo.Connection = conectar;
-
-            codigo.CommandText = ("select * from usuarios where usuario_login = '" + usuario_login.Text + "'and password = '" + password.Text + "'");
-
-            MySqlDataReader leer = codigo.ExecuteReader();
-            if (leer.Read())
-            {
-                MessageBox.Show("Bienvenido");
-            }
-            else
-            {
-                MessageBox.Show("Usuario o contraseña incorrectos");
-            }
-            conectar.Close();
-            */
         }
 
         private void usuario_login_TextChanged(object sender, EventArgs e)

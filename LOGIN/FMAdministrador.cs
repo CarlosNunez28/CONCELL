@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CONCELL.Datos;
 namespace CONCELL
 {
     public partial class FMAdministrador : Form
@@ -19,7 +19,7 @@ namespace CONCELL
 
         private void FMAdministrador_Load(object sender, EventArgs e)
         {
-            
+            MessageBox.Show(General.CurrUsuario.Nombre + " " + General.CurrUsuario.Apellido);
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

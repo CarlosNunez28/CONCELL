@@ -78,3 +78,19 @@ C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.csproj
 C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.csproj.CopyComplete
 C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.exe
 C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.pdb
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\bin\Debug\CONCELL.exe.config
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.exe
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.pdb
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\bin\Debug\CONCELL.exe
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\bin\Debug\CONCELL.pdb
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMAdministrador.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMCrearProducto.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMInventarioMenuLinks.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\LOGIN.Form1.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMInventario.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMUsuarios.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMEntradaSalidaDeProductos.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.Properties.Resources.resources
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.csproj.GenerateResource.Cache
+C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMDashboard.resources

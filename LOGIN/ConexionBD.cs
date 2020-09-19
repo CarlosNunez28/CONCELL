@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CONCELL
 {
@@ -16,7 +17,7 @@ namespace CONCELL
             string servidor = "127.0.0.1";
             string bd = "concell";
             string usuario = "root";
-            string password = "";
+            string password = "toor";
 
             string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id= " + usuario + "; Password=" + password + "";
 

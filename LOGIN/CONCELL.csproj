@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>CONCELL</RootNamespace>
     <AssemblyName>CONCELL</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,7 +37,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="Datos\cRol.cs" />
+    <Compile Include="Datos\cUsuario.cs" />
+    <Compile Include="FMDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMDashboard.Designer.cs">
+      <DependentUpon>FMDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +102,7 @@
     <Compile Include="FMEntradaSalidaDeProductos.Designer.cs">
       <DependentUpon>FMEntradaSalidaDeProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="General.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMAdministrador.resx">
@@ -100,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMCrearProducto.resx">
       <DependentUpon>FMCrearProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMDashboard.resx">
+      <DependentUpon>FMDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMInventarioMenuLinks.resx">
       <DependentUpon>FMInventarioMenuLinks.cs</DependentUpon>
