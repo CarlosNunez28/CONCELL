@@ -87,6 +87,12 @@
     <Compile Include="FMCrearProducto.Designer.cs">
       <DependentUpon>FMCrearProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMEntradaSalidaDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMEntradaSalidaDeProductos.Designer.cs">
+      <DependentUpon>FMEntradaSalidaDeProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMAdministrador.resx">
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMUsuarios.resx">
       <DependentUpon>FMUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMEntradaSalidaDeProductos.resx">
+      <DependentUpon>FMEntradaSalidaDeProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

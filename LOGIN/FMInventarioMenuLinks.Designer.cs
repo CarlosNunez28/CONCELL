@@ -136,7 +136,7 @@
             this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(14, 48);
+            this.panel4.Size = new System.Drawing.Size(11, 48);
             this.panel4.TabIndex = 5;
             // 
             // panel5
@@ -151,7 +151,7 @@
             this.panel6.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(16, 49);
+            this.panel6.Size = new System.Drawing.Size(13, 49);
             this.panel6.TabIndex = 6;
             // 
             // FMInventarioMenuLinks
