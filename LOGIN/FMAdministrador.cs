@@ -20,6 +20,7 @@ namespace CONCELL
         private void FMAdministrador_Load(object sender, EventArgs e)
         {
             MessageBox.Show(General.CurrUsuario.Nombre + " " + General.CurrUsuario.Apellido);
+            MessageBox.Show(General.CurrUsuario.Rol.Nombre);
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -47,6 +48,13 @@ namespace CONCELL
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FMInventarioMenuLinks inventario = new FMInventarioMenuLinks();
+            inventario.Visible = true;
+            Visible = false;
         }
     }
 }

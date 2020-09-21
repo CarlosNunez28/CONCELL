@@ -94,3 +94,7 @@ C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMEntrad
 C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.Properties.Resources.resources
 C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.csproj.GenerateResource.Cache
 C:\Users\Carlos Baires\My Files\CONCELL\CONCELL\LOGIN\obj\Debug\CONCELL.FMDashboard.resources
+C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.FMCrearProducto.resources
+C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.FMDashboard.resources
+C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.FMInventarioMenuLinks.resources
+C:\Users\Carlos Nuñez\source\repos\LOGIN\CONCELL\LOGIN\obj\Debug\CONCELL.FMEntradaSalidaDeProductos.resources

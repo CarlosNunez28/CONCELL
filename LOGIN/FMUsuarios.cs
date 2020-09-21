@@ -28,8 +28,8 @@ namespace CONCELL
 
             string eliminarusuario = "DELETE FROM usuarios WHERE id_usuario = '" + nUsuario + "'";
 
-            MySqlConnection conectarbase = ConexionBD.conexion();
-            conectarbase.Open();
+            MySqlConnection conectarbase = General.GetConnection();
+            
 
             try
             {
@@ -78,8 +78,8 @@ namespace CONCELL
 
         public void Mostrar()
         {
-            MySqlConnection conectarbase = ConexionBD.conexion();
-            conectarbase.Open();
+            MySqlConnection conectarbase = General.GetConnection();
+            
             
             MySqlCommand mostrar = new MySqlCommand("SELECT * FROM usuarios", conectarbase);
 
@@ -88,7 +88,7 @@ namespace CONCELL
             mostrar2.Fill(datset);
 
             dataGridView1.DataSource = datset.Tables[0];
-            conectarbase.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -97,8 +97,8 @@ namespace CONCELL
             MySqlDataReader reader = null;
 
             string buscar = "SELECT id_usuario, usuario_nombre, usuario_apellidos, usuario_login, password, id_rol, estado FROM usuarios WHERE id_usuario LIKE '" + nUsuario + "' LIMIT 1";
-            MySqlConnection conectarbase = ConexionBD.conexion();
-            conectarbase.Open();
+            MySqlConnection conectarbase = General.GetConnection();
+            
 
             try
             {
@@ -120,16 +120,18 @@ namespace CONCELL
                 else
                 {
                     MessageBox.Show("No se encontraron registros");
+                    
                 }
+
             } catch(MySqlException ex)
             {
                 MessageBox.Show("Error al buscar " + ex.Message);
             }
             finally
             {
-                conectarbase.Close();
-                Mostrar();
+                reader.Close();
             }
+            
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
@@ -154,8 +156,8 @@ namespace CONCELL
 
             string ingresarusuario = "UPDATE usuarios SET usuario_nombre='" + nombre + "' , usuario_apellidos= '" + apellidos + "', usuario_login = '" + usuario + "' , password = '" + password + "', id_rol = '" + cargo + "', estado = '" + estado + "'WHERE id_usuario = '" + nUsuario + "'";
 
-            MySqlConnection conectarbase = ConexionBD.conexion();
-            conectarbase.Open();
+            MySqlConnection conectarbase = General.GetConnection();
+            
 
             try
             {
@@ -163,16 +165,14 @@ namespace CONCELL
                 insertar.ExecuteNonQuery();
                 MessageBox.Show("Registro modificado");
                 limpiar();
+                Mostrar();
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show("Error al modificar: " + ex.Message);
             }
-            finally
-            {
-                conectarbase.Close();
-                Mostrar();
-            }
+            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -187,8 +187,8 @@ namespace CONCELL
 
             string ingresarusuario = "INSERT INTO usuarios (id_usuario, usuario_nombre, usuario_apellidos, usuario_login, password, id_rol, estado) VALUES ('" + nUsuario + "', '" + nombre + "', '" + apellidos + "', '" + usuario + "', '" + password + "', '" + cargo + "', '" + estado + "')";
 
-            MySqlConnection conectarbase = ConexionBD.conexion();
-            conectarbase.Open();
+            MySqlConnection conectarbase = General.GetConnection();
+            
 
             try
             {
@@ -196,16 +196,14 @@ namespace CONCELL
                 insertar.ExecuteNonQuery();
                 MessageBox.Show("Registro guardado");
                 limpiar();
+                Mostrar();
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show("Error al guardar: " + ex.Message);
             }
-            finally
-            {
-                conectarbase.Close();
-                Mostrar();
-            }
+            
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

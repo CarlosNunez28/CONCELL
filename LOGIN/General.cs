@@ -14,7 +14,7 @@ namespace CONCELL
         private static string DBSERVER = "127.0.0.1";
         private static string DBNAME = "concell";
         private static string DBUSER = "root";
-        private static string DBPASSWORD = "toor";
+        private static string DBPASSWORD = "";
         private static MySqlConnection CurrConnection = null;
         public static cUsuario CurrUsuario = null;
 
